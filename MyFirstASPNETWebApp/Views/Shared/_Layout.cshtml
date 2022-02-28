@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+@* Mission 3 Jialing Lu *@
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title> @ViewData["Title"] </title>
+    <link rel="icon" href="https://esquilo.io/png/thumb/fFv1xNdlzAFCa60-Moon-PNG-File.png"
+          type="image/x-icon">
+    <link href="~/lib/bootstrap/js/bootstrap.js" rel="stylesheet" type="text/css" />
+    <link href="~/css/main.css" rel="stylesheet" />
+
+</head>
+
+<body>
+    <nav>
+        <a asp-controller="Ex1" asp-action="Index">Home</a>
+        <a asp-controller="Ex1" asp-action="gradecalculator">Grade Calculator</a>
+    </nav>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <br />
+    <footer>Jialing Lu - IS413 - 2022</footer>
+
+    <script src="~/lib/jquery/jquery-3.6.0.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

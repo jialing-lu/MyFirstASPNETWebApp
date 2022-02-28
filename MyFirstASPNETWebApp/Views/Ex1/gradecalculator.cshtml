@@ -1,0 +1,48 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Grade Calculator";
+}
+
+@model gradecalculatorModel;
+<!-- A "Grade Calculator" form that takes as input a percentage scored for each grade
+   category listed in the syllabus  -->
+<br />
+<h4> Calculate final grade for IS413  </h4>
+<p>Enter how much percentage (0-100) you scored for each criteria. Just put the numbers without percentage % sign. (Ex: 0, 50, 100)</p>
+
+<form method="post">
+    <input type="number"
+           asp-for="assignments"
+           placeholder="Assignments"
+           id="assignments" />
+    <br />
+    <input type="number"
+           asp-for="group_project"
+           placeholder="Group Project"
+           id="group_project" />
+    <br />
+    <input type="number"
+           asp-for="quizzes"
+           placeholder="Quizzes"
+           id="quizzes" />
+    <br />
+    <input type="number"
+           asp-for="exams"
+           placeholder="Exams"
+           id="exams" />
+    <br />
+    <input type="number"
+           asp-for="intex"
+           placeholder="Intex"
+           id="intex" />
+    <br />
+    <div asp-validation-summary="All"></div>
+
+    <button type="submit" id="submit" value="Final Grade">Calculate Final Grade </button>
+</form>
+
+<br />
+<p>Total Percentage: <span id="totalpct">@ViewBag.tPct</span></p>
+<p>Letter Grade: <span id="letGrade">@ViewBag.lGrade</span></p>

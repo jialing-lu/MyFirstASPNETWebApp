@@ -1,0 +1,60 @@
+﻿/*Include at least one change to the styling using your own CSS file.*/
+
+
+h1 {
+    text-align: center;
+    color: blueviolet;
+    font-size: 85px;
+}
+
+p {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+p1 {
+    text-align: center;
+    color: black;
+    font-size: 25px;
+}
+h2 {
+    text-align: center;
+    color: deeppink;
+    font-size: 60px;
+}
+
+
+h4 {
+    text-align: center;
+    color: hotpink;
+    font-size: 60px;
+}
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60;
+}
+
+
+li {
+    list-style-type: none;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
+showdatatxt {
+    color: darkred;
+    font-size: 1.2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+
